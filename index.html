@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fetch Api Call</title>
+  </head>
+  <body>
+    <section class="section-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 bg-dark text-white text-center mt-5 p-5">
+            <h1 class="h1">Wanna Make an API Call?</h1>
+            <h5 class="h5">
+              We'll get data from another end point (External Server) then to
+              our site
+            </h5>
+            <button
+              class="btn btn-md btn-primary btn-get-jsonplaceholders-users m-2"
+            >
+              Get JSONPlacehoder Users
+            </button>
+            <button
+              class="btn btn-sm btn-secondary m-2"
+              data-toggle="modal"
+              data-target="#modal-one"
+            >
+              learn More
+            </button>
+            <div class="modal fade" id="modal-one" role="dialog" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title text-dark">
+                      A Brief Explanation
+                    </h6>
+                  </div>
+                  <div class="modal-body">
+                    <p class="text-center text-dark">
+                      When the button (Get Users or Get Posts) is clicked it
+                      sends a GET request to this end points
+                      `https://jsonplaceholder.typicode.com/users`
+                      &`https://jsonplaceholder.typicode.com/posts`. Using the
+                      fetch method in Javascript, the data is then sent back to
+                      us in json format which is in turn parsed then displayed
+                      onto the site
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-sm btn-danger" data-dismiss="modal">
+                      close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-md btn-success btn-get-jsonplaceholders-posts m-2"
+            >
+              Get JSONPlacehoder Posts
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 bg-dark text-dark">
+            <div class="output-section"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </body>
+</html>
